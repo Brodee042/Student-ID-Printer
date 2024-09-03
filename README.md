@@ -3,8 +3,8 @@
 This Python application automates the process of taking email requests and inputting the information into a student ID printer. The script searches for specific keywords in unread emails, extracts the relevant data, and automatically inputs the information into the student ID printer using a GUI interface.
 Features
 
-- Email Parsing: Automatically connects to an email account and checks for new, unread messages.
-- Keyword Extraction: Extracts specific information such as address, delivery method, name, and student ID from the email content.
+- Email Connection: Automatically connects to an email account and checks for new, unread messages.
+- Keyword Searching: Extracts specific information such as address, delivery method, name, and student ID from the email content using some REGEX code.
 - Automatic Input: Automatically enters the extracted information into the student ID printer interface.
 - User Interface: Simple Tkinter-based GUI for managing email checks and automatic printing.
 
@@ -35,7 +35,7 @@ Check for Emails:
 
 Automatically Print ID:
         Click the "Automatically print out an ID, check page formatting" button. The application will input the extracted information into the student ID printer interface.
-        The extracted data includes fields like "Address," "Delivery," "Name," and "Student ID." The script uses pyautogui to simulate mouse movements and keystrokes to input the information.
+        The extracted data includes fields like "Address," "Delivery," "Name," and "Student ID." I decided to use pyautogui to simulate mouse movements and keystrokes to input the information as I wanted the Student Assistants to be able to see and comprehend what was happening.
 
 Manual Verification:
         After the automation is complete, manually verify the information before printing to ensure accuracy.
